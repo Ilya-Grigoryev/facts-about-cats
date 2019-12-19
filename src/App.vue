@@ -21,7 +21,7 @@ export default {
   mounted(){
     
     setInterval((this.axios.get('http://188.225.47.187/api/cats/random-fact.php'))
-    .then((responce) => { this.quote=responce.data; }), 3)
+    .then((responce) => { this.quote=responce.data; }), 10)
     
   }
 }
